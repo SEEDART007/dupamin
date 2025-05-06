@@ -1,0 +1,23 @@
+{
+  "name": "dupamin",
+  "version": "1.0.2",
+  "main": "dist/App.js",
+  "module": "dist/App.modern.js",
+  "source": "src/App.js",
+  "scripts": {
+    "build": "microbundle --jsx React.createElement --format modern,cjs",
+    "prepare": "npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0",
+    "prop-types": "^15.7.2"
+  },
+  "devDependencies": {
+    "microbundle": "^0.15.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "prop-types": "^15.8.1"
+  },
+  "files": ["dist"]
+}
